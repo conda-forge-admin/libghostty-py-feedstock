@@ -39,6 +39,7 @@ tests:
         - pytest
     files:
       source:
+        - pyproject.toml
         - tests/test_core.py
         - tests/test_serialize.py
 
