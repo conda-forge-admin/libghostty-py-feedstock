@@ -1,5 +1,5 @@
 context:
-  version: "0.3.0"
+  version: "0.3.1"
 
 package:
   name: libghostty-py
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/davidbrochart/libghostty-py/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: edaafbc5c13f6a2efb172cc4a0636e18e3927adabdceacd5f38b103e0ade9320
+  sha256: f827c4ecf4205bfbda163eacab227739254141f817152b29abed1d95bc036c23
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cffi
-    - libghostty-vt ==1.0.0
+    - libghostty-vt ==1.0.1
 
 tests:
   - python:
@@ -39,6 +39,7 @@ tests:
         - pytest
     files:
       source:
+        - pyproject.toml
         - tests/test_core.py
         - tests/test_serialize.py
 
