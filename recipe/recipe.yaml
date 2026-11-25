@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cffi
-    - libghostty-vt ==1.0.1
+    - libghostty-vt ==1.0.2
 
 tests:
   - python:
